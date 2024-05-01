@@ -1,11 +1,11 @@
 
 export default function Dashboard() {
   return (
-    <div>
+    <h1>
       Dashbosard
       {/* <HostLayout />
 
       <Outlet /> */}
-    </div>
+    </h1>
   );
 }
