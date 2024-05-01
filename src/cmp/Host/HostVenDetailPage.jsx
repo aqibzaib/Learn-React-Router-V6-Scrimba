@@ -62,20 +62,17 @@ export default function HostVanDetail() {
           </NavLink>
         </nav>
 
-        <Outlet />
+        <Outlet context={{currentVan}} />
       </div>
     </section>
   );
 }
 
 /**
- * Challenge: Add the links for the navbar! Check the
- * Figma design slide to see what the text is.
+ * Challenge: check out the docs linked in the slide, and see if you
+ * can implement the Outlet Context feature it talks about.
  *
- * Make it so the link style changes to more clearly
- * indicate which route we're currently on.
- *
- * Remember, "Details" leads to /host/vans/:id, not
- * /host/vans/:id/details, so you'll need to employ a
- * trick we recently learned for that to work.
+ * Part of this challenge will require you to (finally) build out those
+ * nested components. Again, if you don't need CSS practice, you can
+ * skip the styling part, and I'll handle that for you.
  */
