@@ -15,12 +15,14 @@ import HostVenDetailPage from "./cmp/Host/HostVenDetailPage";
 import HostVanPricing from "./cmp/Host/HostVanPricing";
 import HostVanPhoto from "./cmp/Host/HostVanPhoto";
 import HostVanInfo from "./cmp/Host/HostVanInfo";
+import NotFound from "./cmp/NotFound.";
 
 function App() {
   return (
     <>
       <Routes>
         <Route path="/" element={<Layout />}>
+          <Route path="*" element={<NotFound />} />
           <Route index element={<Home />} />
           <Route path="about" element={<About />} />
           <Route path="vans" element={<VanList />} />
